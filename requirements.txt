@@ -1,0 +1,21 @@
+# Core
+numpy
+pandas
+scikit-learn
+scipy
+
+# Deep Learning
+torch
+torchtext
+torchvision
+
+# NLP
+nltk
+spacy
+
+# Metrics
+rouge-score
+
+# Utilities
+tqdm
+matplotlib

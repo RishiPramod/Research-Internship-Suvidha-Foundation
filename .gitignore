@@ -1,0 +1,38 @@
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data & large raw files (adjust as needed)
+The_Hindu_paper_dataset_2015_to_2025.csv
+/data/*.csv
+/data/*.json
+
+# Model weights & intermediate artifacts
+/models/*.pt
+/models/*.pth
+
+# Embeddings (large)
+/glove.6B.*
+
+# Results can be regenerated
+/results/*.csv
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Temporary
+/tmp/
