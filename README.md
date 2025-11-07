@@ -61,6 +61,11 @@ The following table summarizes the latest evaluation metrics (generated values s
 | CNN | 0.9600 | 0.9216 | 0.9600 | 0.9404 | 0.3775 | 0.0624 | 0.3700 |
 | LSTM | 0.0000 | 0.0288 | 0.0288 | 0.0288 | 0.1310 | 0.0261 | 0.1310 |
 | PHT (this work) | 0.0000 | 0.0381 | 0.0381 | 0.0381 | 0.1309 | 0.0261 | 0.1309 |
+| Logistic Regression | 0.0040 | 0.0038 | 0.0038 | 0.0038 | 0.0591 | 0.0128 | 0.0566 |
+| Naive Bayes | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0557 | 0.0088 | 0.0529 |
+| SVM | 0.0520 | 0.0266 | 0.0294 | 0.0273 | 0.1493 | 0.0727 | 0.1428 |
+| T5-small| — | — | — | — | 0.1200 | 0.0400 | 0.1000 |
+
 
 Notes:
 - The classification-style metrics (Accuracy/Precision/Recall/F1) are based on token-overlap / exact-match heuristics and may not fully capture generative quality; ROUGE scores measure n-gram overlap and are commonly used for headline generation evaluation.
