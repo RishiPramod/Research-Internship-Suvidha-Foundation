@@ -51,6 +51,21 @@ Each script saves metrics under `results/` and model weights under `models/`.
 ## Evaluation
 
 Use ROUGE and token overlap metrics. For classification-style metrics (Accuracy, Precision, Recall, F1) headline matching is approximated via token overlap.
+ 
+## Results
+
+The following table summarizes the latest evaluation metrics (generated values saved under `results/`). Values were computed on the held-out test split using token-overlap and ROUGE metrics.
+
+| Model | Accuracy | Precision | Recall | F1 | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| CNN | 0.9600 | 0.9216 | 0.9600 | 0.9404 | 0.3775 | 0.0624 | 0.3700 |
+| LSTM | 0.0000 | 0.0288 | 0.0288 | 0.0288 | 0.1310 | 0.0261 | 0.1310 |
+| PHT (this work) | 0.0000 | 0.0381 | 0.0381 | 0.0381 | 0.1309 | 0.0261 | 0.1309 |
+
+Notes:
+- The classification-style metrics (Accuracy/Precision/Recall/F1) are based on token-overlap / exact-match heuristics and may not fully capture generative quality; ROUGE scores measure n-gram overlap and are commonly used for headline generation evaluation.
+- Exact numeric values are saved in `results/cnn_metrics.csv`, `results/lstm_metrics.csv`, and `results/pht_metrics.csv`.
+- For reproducibility, run the preprocessing and training scripts listed above and check the `results/` folder for updated metrics after each experiment.
 
 ## Improving PHT Model
 
@@ -79,7 +94,6 @@ torch.manual_seed(SEED)
 if torch.cuda.is_available():
     torch.cuda.manual_seed_all(SEED)
 ```
-
 
 
 ---
