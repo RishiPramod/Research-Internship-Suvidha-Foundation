@@ -80,14 +80,7 @@ if torch.cuda.is_available():
     torch.cuda.manual_seed_all(SEED)
 ```
 
-## License
 
-Provide appropriate license info here (e.g., MIT) if distributing.
-
-## Acknowledgements
-
-- GloVe embeddings: Stanford NLP Group
-- Suvidha Foundation Research Internship context
 
 ---
 Feel free to open issues or pull requests for enhancements.
